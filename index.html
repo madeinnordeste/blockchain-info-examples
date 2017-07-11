@@ -50,7 +50,7 @@
             <div class="row">
                 
                 <div class="col-xs-12">
-                    <h1>Blockchain </h1>
+                    <h1 class="page-header">Blockchain </h1>
                     <div id="bitcoinchart">
                             <script type="text/javascript">
                                 new TradingView.widget({
@@ -78,62 +78,531 @@
     </section>
 
 
-    <section id="infos">
+    <section id="stats">
         
         <div class="container">
+            
             <div class="row">
 
+                <div class="col-xs-12">
+                    <h2 class="page-header">Stats</h2>
+                </div>
+                
                 <div class="col-xs-4">
-                    <h2>Dificuldade</h2>
-                    <span id="getdifficulty">...</span>
+                    <h3>market_price_usd</h3>
+                    <div id="market_price_usd">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>hash_rate</h3>
+                    <div id="hash_rate">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>total_fees_btc</h3>
+                    <div id="total_fees_btc">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>n_btc_mined</h3>
+                    <div id="n_btc_mined">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>n_tx</h3>
+                    <div id="n_tx">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>n_blocks_mined</h3>
+                    <div id="n_blocks_mined">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>minutes_between_blocks</h3>
+                    <div id="minutes_between_blocks">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>totalbc</h3>
+                    <div id="totalbc">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>n_blocks_total</h3>
+                    <div id="n_blocks_total">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>estimated_transaction_volume_usd</h3>
+                    <div id="estimated_transaction_volume_usd">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>blocks_size</h3>
+                    <div id="blocks_size">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>miners_revenue_usd</h3>
+                    <div id="miners_revenue_usd">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>nextretarget</h3>
+                    <div id="nextretarget">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>difficulty</h3>
+                    <div id="difficulty">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>estimated_btc_sent</h3>
+                    <div id="estimated_btc_sent">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>miners_revenue_btc</h3>
+                    <div id="miners_revenue_btc">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>total_btc_sent</h3>
+                    <div id="total_btc_sent">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>trade_volume_btc</h3>
+                    <div id="trade_volume_btc">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>trade_volume_usd</h3>
+                    <div id="trade_volume_usd">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>timestamp</h3>
+                    <div id="timestamp">...</div>
+                </div>
+
+
+                <hr>
+
+            </div>
+
+        </div>    
+
+    </section>
+
+    <section id="realtime">
+        
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h2 class="page-header">Real Time</h2>
+                </div>
+                
+                <div class="col-xs-4">
+                    <h3>getdifficulty</h3>
+                    <div id="getdifficulty">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>getblockcount</h3>
+                    <div id="getblockcount">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>latesthash</h3>
+                    <div id="latesthash">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>bcperblock</h3>
+                    <div id="bcperblock">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>totalbc</h3>
+                    <div id="totalbc">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>probability</h3>
+                    <div id="probability">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>hashestowin</h3>
+                    <div id="hashestowin">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>nextretarget</h3>
+                    <div id="nextretarget">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>avgtxsize</h3>
+                    <div id="avgtxsize">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>avgtxvalue</h3>
+                    <div id="avgtxvalue">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>interval</h3>
+                    <div id="interval">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>eta</h3>
+                    <div id="eta">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>avgtxnumber</h3>
+                    <div id="avgtxnumber">...</div>
                 </div>
 
 
             </div>
-        </div>            
+        </div>
+    </section>
 
+
+
+
+    <section id="misc">
+        
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h2 class="page-header">MISC</h2>
+                </div>
+                
+                <div class="col-xs-4">
+                    <h3>unconfirmedcount</h3>
+                    <div id="unconfirmedcount">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>24hrprice</h3>
+                    <div id="24hrprice">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>marketcap</h3>
+                    <div id="marketcap">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>24hrtransactioncount</h3>
+                    <div id="24hrtransactioncount">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>24hrbtcsent</h3>
+                    <div id="24hrbtcsent">...</div>
+                </div>
+
+                 <div class="col-xs-4">
+                    <h3>hashrate</h3>
+                    <div id="hashrate">...</div>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3>rejected</h3>
+                    <div id="rejected">...</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="exchange_rates">
+        
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h2 class="page-header">Exchange Rates</h2>
+                </div>
+
+
+                <div id="exchange_rates_ticker">
+                </div>
+
+            </div>
+        </div>
 
     </section>
 
 
+    <section id="currency_converter">
+        
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h2 class="page-header">Currency to BTC</h2>
+                </div>
+
+
+                <div class="col-xs-3">
+                    Value:<br>
+                    <input type="text" id="currency_value" class="form-control" value="1">
+                </div>
+
+                <div class="col-xs-3">
+                    Currency:<br>
+                    <select name="currency_symbol" id="currency_symbol" class="form-control"></select>
+                </div>
+
+                <div class="col-xs-3">
+                    <br>
+                    <input type="button" id="currency_btn" class="btn btn-info form-control" value="Convert">
+                </div>
+
+                <div class="col-xs-3">
+                    BTC:<br>
+                    <input type="text" id="currency_btc" class="form-control">
+                </div>
+
+            </div>
+        </div>
+
+    </section>   
+
+
+
+    <section id="pools">
+        
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h2 class="page-header">Pools (5days)</h2>
+                </div>
+
+
+                <div id="pools_container">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <br><br><br><br><br>
+    </footer>                             
+
+
     <script>
         $(document).bind('ready', function(){
+
+
+            /*
+            * cotações das exchange                        
+            * cotação no brasil                        
+            * volume de transações (dia/semana/mes/ano)                        
+            * bitcoin minerados por dia
+            */
+
+            //stats
+            //- - - - - - - - - - - - - - 
+
+            $.get( "https://api.blockchain.info/stats?cors=true", function( data ) {
+                
+                //$('#market_price_usd').html(data.market_price_usd);
+                $.each(data, function(index, value) {
+                    $('#'+index).html(value);
+                }); 
+
+            });
+
+
+
+            // real time
+            // https://blockchain.info/q
+            //- - - - - - - - - - - - - - 
+
+            var real_time_endpoints = ['getdifficulty', 'getblockcount', 'latesthash',
+                                      'bcperblock', 'totalbc', 'probability', 'hashestowin',
+                                      'nextretarget', 'avgtxsize', 'avgtxvalue', 'interval',
+                                      'eta', 'avgtxnumber'];
+
+            real_time_endpoints.forEach(function(entry) {
+                
+                //console.log(entry);
+                $.get( "https://blockchain.info/q/"+entry+"?cors=true", function( data ) {
+                
+                    //$('#market_price_usd').html(data.market_price_usd);
+                    $('#'+entry).html(data);
+                    //console.log(data);
+
+                });
+
+            });
+
+
+            // misc
+            // https://blockchain.info/q
+            //- - - - - - - - - - - - - - 
+
+            var misc_endpoints = ['unconfirmedcount', '24hrprice', 'marketcap',
+                                  '24hrtransactioncount', '24hrbtcsent', 'hashrate',
+                                  'rejected'];
+
+            misc_endpoints.forEach(function(entry) {
+                
+                //console.log(entry);
+                $.get( "https://blockchain.info/q/"+entry+"?cors=true", function( data ) {
+                
+                    //$('#market_price_usd').html(data.market_price_usd);
+                    $('#'+entry).html(data);
+                    //console.log(data);
+
+                });
+
+            });
+
+
+            // Exchange Rates
+            // https://blockchain.info/api/exchange_rates_api
+
+            var currencies = [];
+
+            $.get( "https://blockchain.info/ticker?cors=true", function( data ) {
+                
+                $.each(data, function(index, value) {
+
+                    var currency_lines = [];
+
+                    currency_lines.push('<h5>'+index+'</h5>');
+
+                    currencies.push(index);
+
+                    $.each(value, function(cidx, cval) {
+
+                        currency_lines.push(cidx+' : '+cval);
+
+                    });
+
+                    currency_html = '<div class="col-xs-4">'+
+                                    currency_lines.join('<br/>')+
+                                    '<br/><br/><hr>'+
+                                    '</div>';
+
+                    $( "#exchange_rates_ticker" ).append( currency_html );
+
+
+                }); 
+
+
+                currency_symbol( currencies );
+
+            });
+
+
+            // Currency to BTC ( convert )
+            // https://blockchain.info/api/exchange_rates_api
+
+            //populate select #currency_symbol
+            function currency_symbol( currencies ){
+
+                $.each(currencies, function(index, value) {
+                    $('#currency_symbol').append( "<option value='"+value+"'>"+value+"</option>" );
+                });
+
+            }
+
+            function convert_to_btc(){
+                console.log('converto to btc');
+
+                var c_value = parseInt( $('#currency_value').val() );
+                var c_symbol = $('#currency_symbol').val();
+                var c_btc = $('#currency_btc').val();
+                var c_url = "https://blockchain.info/tobtc?cors=true&currency="+c_symbol+
+                            "&value="+c_value;
+
+
+                //c_url = "https://blockchain.info/tobtc?cors=true&currency=USD&value=111".toString();
+
+                console.log( c_url );
+                
+                $.get( c_url, function( data ) {
+
+                    $('#currency_btc').val( data );
+                    console.log( data );
+
+                });
+                
+            }
+
+
+            $('#currency_btn').on('click', function(){
+                convert_to_btc();
+            });
             
-            /*
+            
+            // Pools
+            // https://blockchain.info/api/charts_api
 
-            XMLHttpRequest cannot load https://blockchain.info/q/getdifficulty. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8000' is therefore not allowed access.
+            // charts https://blockchain.info/charts
 
-            */
+            $.get( "https://api.blockchain.info/pools?timespan=5days&cors=true", function( data ) {
+                
+                $.each(data, function(index, value) {
 
-            /*   
-            $.support.cors = true;
-            $.get( "https://blockchain.info/q/getdifficulty", function( data ) {
-                $( ".result" ).html( data );
-                alert( "Load was performed." );
+                    currency_html = '<div class="col-xs-4">'+
+                                    index+' : '+value+
+                                    '<br/><br/><hr>'+
+                                    '</div>';
+
+                    $( "#pools_container" ).append( currency_html );
+
+                });
+
             });
-            */
-
-            /*
-            $.ajax({
-                url: "https://blockchain.info/q/getdifficulty",
-                crossDomain: true,
-                dataType: 'json',
-                success: function(data) {
-                    console.log(data);
-                },
-                type: 'GET'
-            });
-            */
 
 
-            $.ajax({
-                url: 'https://blockchain.info/q/getdifficulty',
-                dataType: 'json',
-                success: function (data) {
-                    $('#blockchain').append(JSON.stringify(data));
-                },
-                error: function () {}
-            });
+
+            var ws_unconfirmed = new WebSocket('wss://ws.blockchain.info/inv');
+
+            ws_unconfirmed.onopen = function () {
+                ws_unconfirmed.send('{"op":"unconfirmed_sub"}'); // Send the message 'Ping' to the server
+            };
+
+            // Log errors
+            ws_unconfirmed.onerror = function (error) {
+              console.log('WebSocket Error ' + error);
+            };
+
+            // Log messages from the server
+            ws_unconfirmed.onmessage = function (e) {
+                json = JSON.parse(e.data);
+                console.log( json );
+                console.log( 'hash: '+json.x.hash );
+                console.log('-----');
+              //console.log( JSON.parse(e.data) );
+            };
 
 
         });
