@@ -126,6 +126,16 @@
             */
 
 
+            $.ajax({
+                url: 'https://blockchain.info/q/getdifficulty',
+                dataType: 'json',
+                success: function (data) {
+                    $('#blockchain').append(JSON.stringify(data));
+                },
+                error: function () {}
+            });
+
+
         });
     </script>
 
