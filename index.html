@@ -31,6 +31,7 @@
     <!-- Include a polyfill for ES6 Promises (optional) for IE11 and Android browser -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js"></script>
 
+    <!-- https://www.tradingview.com/wiki/Main_Page //-->
     <script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
 
 
@@ -49,37 +50,85 @@
             <div class="row">
                 
                 <div class="col-xs-12">
-                    
                     <h1>Blockchain </h1>
-                    
                     <div id="bitcoinchart">
-
                             <script type="text/javascript">
-
-                            new TradingView.widget({
-                                "autosize": true,
-                                "symbol": "FOXBIT:BTCBRL",
-                                "interval": "240",
-                                "timezone": "exchange",
-                                "theme": "White",
-                                "toolbar_bg": "#f4f7f9",
-                                "hide_side_toolbar": false,
-                                "watchlist": [
-                                "BITFINEX:BTCUSD",
-                                "OKCOIN:BTCCNY"
-                                ],
-                                "locale": "pt",
-                                "hideideas": true
-                            });
-
+                                new TradingView.widget({
+                                    "autosize": true,
+                                    "symbol": "FOXBIT:BTCBRL",
+                                    "interval": "240",
+                                    "timezone": "exchange",
+                                    "theme": "White",
+                                    "toolbar_bg": "#f4f7f9",
+                                    "hide_side_toolbar": false,
+                                    "watchlist": [
+                                    "BITFINEX:BTCUSD",
+                                    "OKCOIN:BTCCNY"
+                                    ],
+                                    "locale": "pt",
+                                    "hideideas": true
+                                });
                             </script>
                     </div>
-
                 </div>
 
             </div>
+
         </div>
     </section>
+
+
+    <section id="infos">
+        
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4">
+                    <h2>Dificuldade</h2>
+                    <span id="getdifficulty">...</span>
+                </div>
+
+
+            </div>
+        </div>            
+
+
+    </section>
+
+
+    <script>
+        $(document).bind('ready', function(){
+            
+            /*
+
+            XMLHttpRequest cannot load https://blockchain.info/q/getdifficulty. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://localhost:8000' is therefore not allowed access.
+
+            */
+
+            /*   
+            $.support.cors = true;
+            $.get( "https://blockchain.info/q/getdifficulty", function( data ) {
+                $( ".result" ).html( data );
+                alert( "Load was performed." );
+            });
+            */
+
+            /*
+            $.ajax({
+                url: "https://blockchain.info/q/getdifficulty",
+                crossDomain: true,
+                dataType: 'json',
+                success: function(data) {
+                    console.log(data);
+                },
+                type: 'GET'
+            });
+            */
+
+
+        });
+    </script>
+
 
     
 </body>
